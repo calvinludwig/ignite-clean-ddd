@@ -1,9 +1,7 @@
 module.exports = {
-	extends: ['@rocketseat/eslint-config/node'],
+	extends: ['@rocketseat/eslint-config/node', 'plugin:vitest-globals/recommended'],
 	rules: {
 		'no-useless-constructor': 'off',
-		'no-new': 'off',
-		camelcase: 'off',
 		indent: ['error', 'tab'],
 		'prettier/prettier': [
 			'error',
@@ -18,5 +16,8 @@ module.exports = {
 				semi: false,
 			},
 		],
+	},
+	env: {
+		'vitest-globals/env': true,
 	},
 }

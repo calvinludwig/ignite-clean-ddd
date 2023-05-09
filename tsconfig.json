@@ -1,13 +1,16 @@
 {
-	"extends": "@tsconfig/node18/tsconfig.json",
-	"compilerOptions": {
-		"module": "es2022",
-		"strictPropertyInitialization": false,
-		"resolveJsonModule": true,
-		"paths": {
-		"@/*": [
-				"./src/*"
-			]
-		},
-	}
+    "extends": "@tsconfig/node18/tsconfig.json",
+    "compilerOptions": {
+        "module": "es2022",
+        "strictPropertyInitialization": false,
+        "resolveJsonModule": true,
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "types": [
+            "vitest/globals"
+        ]
+    }
 }
